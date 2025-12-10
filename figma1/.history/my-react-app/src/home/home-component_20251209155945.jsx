@@ -1,0 +1,20 @@
+import React from "react";
+const HomeComponent=()=>{
+    return(
+        <div>
+           <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li> <a href="#">Explore</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+            butto
+
+           </nav>
+        </div>
+    );
+};
+export default HomeComponent;
