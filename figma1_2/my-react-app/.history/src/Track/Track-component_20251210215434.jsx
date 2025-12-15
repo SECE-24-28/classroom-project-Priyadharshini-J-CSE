@@ -1,0 +1,16 @@
+import React from "react";
+const TrackComponent=()=>{
+    return(
+        <div>
+           <div className="track">
+
+            <div className="box">
+                <i class="fa-regular fa-truck-fast"></i>
+            </div>
+
+           </div>
+
+        </div>
+    );
+};
+export default TrackComponent;

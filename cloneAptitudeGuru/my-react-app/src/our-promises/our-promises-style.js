@@ -1,44 +1,45 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
 export const OurPromisesStyle = styled.div`
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: ${(props) => props.gapLength};
+  align-items: center;
 
-  .heading {
+  h1 {
     text-align: center;
-    font-size: 50px;
   }
-
-  .para {
-    color: grey;
-    font-size: 23px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 50px;
-  }
-
-  .bigbox {
+  .parent {
     display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 30px;
     flex-wrap: wrap;
-  }
+    justify-content: center;
+    gap: 2rem;
 
-  .smallbox {
-    border-top: 5px solid;
-    padding: 20px;
-    max-width: 400px;
+    //background-color: pink;
   }
-
-  .smallbox h1 {
-    color: #515252;
+  .child {
+    display: flex;
+    max-width: 380px;
+    gap: 20px;
+    flex-direction: column;
+    border-radius: 0px 0px 10px 10px;
+    padding: 1.5rem;
+    background-color: rgb(255, 255, 255);
   }
-
-  .smallbox p {
-    font-size: 21px;
-    line-height: 1.5;
-    color: #686B6B;
+  .title__parent {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .para {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(86, 102, 131);
+    text-align: left;
+  }
+  .title {
+    font-size: 24px;
+    color: rgb(119, 119, 119);
+    font-weight: 600;
   }
 `;
